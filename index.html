@@ -9,36 +9,240 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
+
   <body>
     <div class="p-4 flex justify-center items-center">
-      <p class="text-2xl">Arnav Surve</p>
+      <p class="text-3xl">Arnav Surve</p>
     </div>
-    <div class="flex justify-center items-center">
-      <div class="flex space-x-1">
-        <p>916-472-9444 |</p>
-        <a class="hover:underline" href="arnavsurve@gmail.com"
-          >arnavsurve@gmail.com |</a
-        >
-        <a class="hover:underline" href="https://linkedin/in/arnavsurve"
-          >https://linkedin/in/arnavsurve |</a
-        >
-        <a class="hover:underline" href="https://github.com/arnavsurve"
-          >https://github.com/arnavsurve</a
-        >
-      </div>
+
+    <div class="mx-20 flex justify-around">
+      <p>916-472-9444</p>
+      <a class="hover:underline" href="arnavsurve@gmail.com"
+        >arnavsurve@gmail.com</a
+      >
+      <a class="hover:underline" href="https://linkedin.com/in/arnavsurve"
+        ><i class="fa-brands fa-linkedin"></i
+      ></a>
+      <a href="https://github.com/arnavsurve"
+        ><i class="fa-brands fa-github"></i
+      ></a>
     </div>
-    <div class="p-4 justify-start">
-      <p class="text-xl">Education</p>
+
+    <div class="m-4">
+      <p class="text-xl p-2">Education</p>
       <hr />
-      <div class="p-4">
+      <div class="mx-4 mt-4">
         <div class="flex justify-between">
-          <p class="font-bold">California State University - Sacramento</p>
-          <p>Sacramento, CA</p>
+          <p>California State University - Sacramento</p>
+          <p class="font-light">Sacramento, CA</p>
         </div>
         <div class="flex justify-between font-thin">
-          <p>Bachelor of Science, Computer Science</p>
+          <p>BS, Computer Science</p>
           <p>Aug 2024 - May 2026</p>
+        </div>
+      </div>
+      <div class="mx-4 mt-4">
+        <div class="flex justify-between">
+          <p>Purdue University</p>
+          <p class="font-light">West Lafayette, IN</p>
+        </div>
+        <div class="flex justify-between font-thin">
+          <p>BS, Cybersecurity - Dean's List, Fall 2023</p>
+          <p>Aug 2022 - May 2024</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="m-4">
+      <p class="text-xl p-2">Technical Skills</p>
+      <hr />
+      <div class="mx-4 mt-4">
+        <div class="flex justify-between">
+          <p>
+            Languages:
+            <span class="font-thin text-sm"
+              >Python, Java, Go, PostgreSQL, mySQL, LaTeX, JavaScript,
+              HTML/CSS</span
+            >
+          </p>
+        </div>
+        <div class="flex justify-between">
+          <p>
+            Frameworks:
+            <span class="font-thin text-sm">
+              Agile, Svelte, Flask, Node.js/Express.js
+            </span>
+          </p>
+        </div>
+        <div class="flex justify-between">
+          <p>
+            Tools:
+            <span class="font-thin text-sm"
+              >Git, Vim, Prometheus, Grafana, AWS, Bash, Docker, Jupyter
+              Notebooks</span
+            >
+          </p>
+        </div>
+        <div class="flex justify-between">
+          <p>
+            Libraries:
+            <span class="font-thin text-sm"
+              >SciKit-Learn, SciPy, NumPy, Flask, ReactUI, TailwindCSS</span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="m-4">
+      <p class="text-xl p-2">Projects</p>
+      <hr />
+
+      <div class="mx-4 mt-4">
+        <div class="flex justify-between">
+          <p class="text-lg">lastfm-crawl</p>
+          <a href="https://github.com/arnavsurve/lastfm-crawl"
+            >github.com/arnavsurve/lastfm-crawl</a
+          >
+        </div>
+        <div class="flex justify-between">
+          <p class="font-thin">July 2024</p>
+        </div>
+        <div class="font-thin text-sm mx-4 mt-2 max-w-3xl">
+          <ul>
+            <li>
+              - Developed a wrapper for the Last.fm API for a staightforward and
+              granular way to embed Last.fm stats in a website or application
+            </li>
+            <li>
+              - Implemented API endpoints in Flask to serve JSON data such as
+              listening history, followers/following, and aggregated
+              daily/monthly/yearly listening stats.
+            </li>
+            <li>
+              - Containerized the application using Docker and utilized Zappa to
+              create a CI/CD pipeline for ease of testing and deployment
+            </li>
+            <li>
+              - Deployed to AWS Lambda for serverless endpoint access,
+              mitigating ~$15 in monthly costs compared to AWS EC2.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="m-4">
+      <p class="text-xl p-2">Experience</p>
+      <hr />
+
+      <div class="mx-4 mt-4">
+        <div class="flex justify-between">
+          <p class="text-lg">DevOps Intern</p>
+          <p class="font-light">Tacoma, WA</p>
+        </div>
+        <div class="flex justify-between">
+          <p class="font-light">MITER Brands</p>
+          <p class="font-thin">June 2024 - Aug 2024</p>
+        </div>
+        <div class="font-thin text-sm mx-4 mt-2 max-w-3xl">
+          <ul>
+            <li>
+              - Performed a granular analysis of IT server, application, and
+              network monitoring landscape. Authored a formal proposal to
+              optimize alerts flow for increased scalability and faster time to
+              incident resolution.
+            </li>
+            <li>
+              - Created monitors in Site24x7 to record latency metrics for Infor
+              Cloud REST API endpoints.
+            </li>
+            <li>
+              - Optimized monitor and alert groups, escalation policies, and
+              alert thresholds in Site24x7.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mx-4 mt-4">
+        <div class="flex justify-between">
+          <p class="text-lg">Undergraduate Researcher</p>
+          <p class="font-light">Sacramento, CA</p>
+        </div>
+        <div class="flex justify-between">
+          <p class="font-light">NASA California Space Grant Consortium</p>
+          <p class="font-thin">May 2024 - Aug 2024</p>
+        </div>
+        <div class="font-thin text-sm mx-4 mt-2 max-w-3xl">
+          <ul>
+            <li>
+              - Conducted research under professor Paulo Afonso developing
+              microcomputer applications for capturing and processing infrasound
+              data using Raspberry Pi.
+            </li>
+            <li>
+              - Developed a supervised nearest neighbor classification model
+              using SKLearn and SciPy to predict seismic activity trained on
+              Boise State University's infrasound data repository.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mx-4 mt-4">
+        <div class="flex justify-between">
+          <p class="text-lg">Backend Developer</p>
+          <p class="font-light">West Lafayette, IN</p>
+        </div>
+        <div class="flex justify-between">
+          <p class="font-light">Purdue University office of Engagement</p>
+          <p class="font-thin">Aug 2022 - May 2023</p>
+        </div>
+        <div class="font-thin text-sm mx-4 mt-2 max-w-3xl">
+          <ul>
+            <li>
+              - Worked in a 10 person team using Agile methodology to develop a
+              web application for student and faculty to apply for research
+              grants
+            </li>
+            <li>- Implemented REST API endpoints using Express.js</li>
+            <li>
+              - Implemented federated authentication using Purdue University
+              Single Sign-On
+            </li>
+            <li>
+              - Architected an ORM database to handle user data and grant
+              applications using PostgreSQL and PrismaDB
+            </li>
+            <li>
+              - Utilized Docker containers for deployment of backend services
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="m-4">
+        <p class="text-xl p-2">Relevant Coursework</p>
+        <hr />
+        <div class="mx-4 mt-4 font-light">
+          <div class="flex justify-between">
+            <p>CNIT 270000 - Cybersecurity Fundamentals</p>
+            <p class="font-thin">Ubuntu, Wireshark, Nmap, SQL</p>
+          </div>
+          <div class="flex justify-between">
+            <p>CNIT 271000 - Cybersecurity Fundamentals II</p>
+            <p class="font-thin">AWS (IAM, EC2, S3)</p>
+          </div>
+          <div class="flex justify-between">
+            <p>CNIT 250000 - Object Oriented Programming</p>
+            <p class="font-thin">Java</p>
+          </div>
         </div>
       </div>
     </div>
